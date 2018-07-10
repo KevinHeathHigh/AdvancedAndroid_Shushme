@@ -7,6 +7,9 @@
     <string name="setting_enabled" translatable="false">EnabledSetting</string>
     <string name="settings_label">Settings</string>
     <string name="location_permissions">Location Permissions</string>
+    <string name="ringermode_permission">RingerMode Permission</string>
+    <string name="silent_mode_activated">You have entered a quiet place</string>
+    <string name="back_to_normal">YOu have left a quiet place</string>
     <string name="enable_geofences">Enable Geofences</string>
     <string name="privacy">http://www.google.com/policies/privacy</string>
 </resources>
