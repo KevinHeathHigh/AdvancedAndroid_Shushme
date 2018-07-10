@@ -120,13 +120,34 @@
             android:layout_marginTop="4dp"
             android:background="@color/colorPrimary" />
 
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/places_list_recycler_view"
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content">
 
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/places_list_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </ScrollView>
+        <!-- TODO (9) Add the "Powered by Google" logo and a link to Google's privacy policy here -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/powered_by_google_light" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="https://cloud.google.com/maps-platform/terms/" />
+        </LinearLayout>
     </LinearLayout>
 
-    <!-- TODO (9) Add the "Powered by Google" logo and a link to Google's privacy policy here -->
-    
 </RelativeLayout>
